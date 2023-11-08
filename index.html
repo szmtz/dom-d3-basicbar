@@ -11,6 +11,9 @@
 <svg width="500" height="100"></svg>
 
 <script>
+ // Select the SVG container first
+ const svg = document.querySelector('svg');
+
   // Data array
   const data = [30, 50, 80, 40, 60];
 
@@ -26,6 +29,7 @@
 
     // Append the rectangle to the SVG container
     svg.appendChild(rect);
+
    });
    
 </script>

@@ -16,7 +16,13 @@
 
    // Loop through data to create bars
    data.forEach((value, index) => {
-
+      // Create a rectangle for each data point
+      let rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+    rect.setAttribute('width', '20');
+    rect.setAttribute('height', value);
+    rect.setAttribute('x', index * 30); // Spacing out the bars
+    rect.setAttribute('y', 100 - value); // Starting from bottom of the SVG container
+    rect.style.fill = 'teal';
 
 
 </script>
